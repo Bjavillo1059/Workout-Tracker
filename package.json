@@ -12,8 +12,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mongoose": "^5.3.16",
     "morgan": "^1.9.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bjavillo1059/Workout-Tracker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Bjavillo1059/Workout-Tracker/issues"
+  },
+  "homepage": "https://github.com/Bjavillo1059/Workout-Tracker#readme"
 }
