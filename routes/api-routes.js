@@ -9,7 +9,7 @@ router.get("/workouts", (req, res) => {
       res.json(dbWorkout);
     })
     .catch((err) => {
-      res.status(400).json(err);
+      res.status(500).json(err);
     });
 });
 
@@ -20,7 +20,7 @@ router.get("/workouts/range", (req, res) => {
       res.json(dbWorkout);
     })
     .catch((err) => {
-      res.status(400).json(err);
+      res.status(500).json(err);
     });
 });
 
@@ -33,7 +33,7 @@ router.put("/workouts/:id", (req, res) => {
       res.json(dbWorkout);
     })
     .catch((err) => {
-      res.status(400).json(err);
+      res.status(500).json(err);
     });
 });
 
@@ -43,7 +43,7 @@ router.post("/workouts/", (req, res) => {
       res.json(dbWorkout);
     })
     .catch((err) => {
-      res.status(400).json(err);
+      res.status(500).json(err);
     });
 });
 
