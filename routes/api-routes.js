@@ -27,7 +27,7 @@ router.get("/workouts/range", (req, res) => {
 router.put("/workouts/:id", (req, res) => {
   db.Workout.findByIdAndUpdate(
     { _id: req.params.id },
-    { $push: { exercises: [req.body] } }
+    { $push: { exercises: [req.body] }, $inc: {totalDuration: req.body.duration} }
   )
     .then((dbWorkout) => {
       res.json(dbWorkout);
